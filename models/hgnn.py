@@ -436,7 +436,7 @@ cfg = {
     'E': [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 256, 'M', 512, 512, 512, 512, 'M', 512, 512, 512, 512, 'M'],
 }
 
-def HGNN(pretrained=True, **kwargs):
+def HGNN_Net(pretrained=True, **kwargs):
     model = CoattentionModel(make_layers(cfg['D1'],**kwargs),**kwargs)  
     if pretrained:
          model = load_pretrained_model(model,path=None)
