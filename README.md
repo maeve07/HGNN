@@ -1,4 +1,6 @@
-# HGNN
+# Multi-Granular Semantic Mining for Weakly Supervised Semantic Segmentation
+
+This repository contains the PyTorch implementation for ACMMM 2022 Paper "Multi-Granular Semantic Mining for Weakly Supervised Semantic Segmentation" by Meijie Zhang, Jianwu Li, and Tianfei Zhou.
 
 ## Prerequisites
 
@@ -26,3 +28,13 @@ Then generate the pseudo labels of the training set by  running ```python gen_la
 
 ### Segmentation network
 We use Deeplab-v2 for the segmentation network with our generated pseudo labels. But most popular FCN-like segmentation networks can be used instead.  
+
+## Citation
+```
+@article{zhou2021cascaded,
+  title={Multi-Granular Semantic Mining for Weakly Supervised Semantic Segmentation},
+  author={Zhang, Meijie and Li, Jianwu and Zhou, Tianfei},
+  booktitle={ACM MM},
+  year={2022}
+}
+```
